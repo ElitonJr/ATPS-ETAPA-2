@@ -9,6 +9,14 @@ package ATPS;
  *
  * @author Eliton
  */
-public class Portatil {
+public class Portatil extends Equipamento{
     
+
+    public Portatil(String tipo, String acessorio, String matricula_colaborador, String tipo_acesso_rede, String uso) {
+        super(tipo, acessorio, matricula_colaborador, tipo_acesso_rede, uso);
+    }
+    @Override
+    public void imprimirTipoEquipamento(){
+        System.out.println("Equipamento Portatil");
+    }
 }

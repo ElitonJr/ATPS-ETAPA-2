@@ -15,6 +15,17 @@ public class Equipamento {
     String matricula_colaborador;
     String tipo_acesso_rede;
     String uso;
+    
+    public Equipamento(String tipo, String acessorio, String matricula_colaborador, String tipo_acesso_rede, String uso){
+        this.tipo = tipo;
+        this.acessorio = acessorio;
+        this.matricula_colaborador = matricula_colaborador;
+        this.tipo_acesso_rede = tipo_acesso_rede;
+        this.uso = uso;
+    }
+    public void imprimirTipoEquipamento(){
+    System.out.println("Equipamento Normal");
+    }
 
     public String getTipo() {
         return tipo;
